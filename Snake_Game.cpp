@@ -119,7 +119,7 @@ public:
                 }
                 if (i == snake.head->y && j == snake.head->x) {
                     SetColor(2); // Green color for the snake's head
-                    cout << "O";
+                    cout << "0";
                 } else if (i == food.y && j == food.x) {
                     SetColor(9); // Yellow color for the food
                     cout << "F";
@@ -162,6 +162,10 @@ public:
 
 int main() {
     char choice;
+    int slp;
+    cout << " Enter Khelene ki speed";
+    cin >> slp;
+    
     do {
         Snake snake;
         Food food;
@@ -201,7 +205,7 @@ int main() {
                 snake.AddTail();
             }
 
-            Sleep(100);
+            Sleep(slp);
         }
         cout << "Game Over! Final Score: " << game.score << endl;
         cout << "Press 'R' to restart or 'Q' to quit: ";
