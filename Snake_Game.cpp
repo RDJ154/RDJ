@@ -163,7 +163,7 @@ public:
 int main() {
     char choice;
     int slp;
-    cout << " Enter Khelene ki speed";
+    cout << "Enter Khelne ki speed : ";
     cin >> slp;
     
     do {
